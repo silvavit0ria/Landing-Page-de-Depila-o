@@ -1,0 +1,603 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  background-color: white;
+  width: 100%;
+  justify-content: space-between;
+  z-index: 10;
+}
+header .nav-bar {
+  margin: 0 5rem;
+}
+header .nav-bar ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.5rem;
+  list-style-type: none;
+}
+header .nav-bar ul #link-logon {
+  color: #D5ABA5;
+}
+header .nav-bar ul #link-logon:hover {
+  color: #f05c45;
+}
+header .nav-bar ul a {
+  padding: 1rem 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: rgba(120, 119, 119, 0.949);
+}
+header .nav-contato {
+  display: flex;
+  align-items: center;
+}
+header .nav-contato a {
+  color: black;
+  width: 10vw;
+  margin: 0 5rem 0 0.5rem;
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
+}
+header .nav-contato img {
+  width: 3vw;
+}
+
+.nav-intro {
+  background-image: url("image/fundo1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  transition: background-image 0.5s ease-in-out;
+}
+.valores-page-feminino {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5rem;
+  font-family: "Noto Sans", sans-serif;
+}
+.valores-page-feminino img {
+  width: 15vw;
+  border-radius: 100%;
+  position: relative;
+  left: 0;
+  bottom: 2rem;
+}
+.valores-page-feminino .valores-item {
+  background-color: white;
+  width: 20vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: none;
+  transition: box-shadow 0.5s ease, transform 0.3s ease;
+}
+.valores-page-feminino .valores-box {
+  text-align: center;
+  position: relative;
+  bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.valores-page-feminino .info-box-valores {
+  text-align: center;
+  align-items: center;
+}
+.valores-page-feminino .info-box-valores h6 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 0.5rem 0;
+}
+.valores-page-feminino .info-box-valores p {
+  padding: 1rem;
+}
+.valores-page-feminino .info-box-valores {
+  flex-grow: 1;
+}
+.valores-page-feminino button {
+  padding: 0.5rem 2rem;
+  margin: 0.5rem;
+  background-color: #D5ABA5;
+  border: 0;
+  border-radius: 20px;
+  border: solid white;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  font-family: "Noto Sans", sans-serif;
+  cursor: pointer;
+}
+.valores-page-feminino button a {
+  text-decoration: none;
+  color: white;
+}
+.valores-page-feminino button:hover {
+  background-color: white;
+  border: solid #D5ABA5;
+}
+.valores-page-feminino button:hover a {
+  color: #D5ABA5;
+}
+.valores-page-feminino .valores-item:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.5);
+}
+
+.valores-page-masculina {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5rem;
+  font-family: "Noto Sans", sans-serif;
+}
+.valores-page-masculina img {
+  width: 15vw;
+  border-radius: 100%;
+  position: relative;
+  left: 0;
+  bottom: 2rem;
+}
+.valores-page-masculina .valores-item {
+  background-color: white;
+  width: 20vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: none;
+  transition: box-shadow 0.5s ease, transform 0.3s ease;
+}
+.valores-page-masculina .valores-box {
+  text-align: center;
+  position: relative;
+  bottom: 2rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.valores-page-masculina .info-box-valores h6 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 0.5rem 0;
+}
+.valores-page-masculina .info-box-valores p {
+  padding: 1rem;
+  text-align: center;
+}
+.valores-page-masculina .info-box-valores {
+  flex-grow: 1;
+}
+.valores-page-masculina .valores-item:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.5);
+}
+.valores-page-masculina button {
+  padding: 0.5rem 2rem;
+  margin: 0.5rem;
+  background-color: #D5ABA5;
+  border: 0;
+  border-radius: 20px;
+  border: solid white;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  font-family: "Noto Sans", sans-serif;
+  cursor: pointer;
+}
+.valores-page-masculina button a {
+  text-decoration: none;
+  color: white;
+}
+.valores-page-masculina button:hover {
+  background-color: white;
+  border: solid #D5ABA5;
+}
+.valores-page-masculina button:hover a {
+  color: #D5ABA5;
+}
+
+.sobre-page {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3rem;
+  font-family: "Noto Sans", sans-serif;
+}
+.sobre-page img {
+  width: 20vw;
+}
+.sobre-page .info-box-sobre {
+  width: 50vw;
+  text-align: center;
+}
+.sobre-page .info-box-sobre h1 {
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.sobre-page .info-box-sobre p {
+  padding: 1rem;
+}
+.sobre-page .info-box-sobre .sobre-botao {
+  padding: 0.5rem 2rem;
+  margin: 0.5rem;
+  background-color: #D5ABA5;
+  border: 0;
+  border-radius: 20px;
+  border: solid white;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  font-family: "Noto Sans", sans-serif;
+  transition: all 0.8s ease;
+}
+.sobre-page .info-box-sobre .sobre-botao:hover {
+  background-color: rgba(255, 255, 255, 0.4196078431);
+  color: #D5ABA5;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: solid;
+}
+
+footer {
+  background-color: #D5ABA5;
+  height: auto;
+  text-align: center;
+  color: rgb(124, 123, 123);
+}
+footer .redes-page {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0.5rem 1rem;
+}
+footer .redes-page img {
+  width: 3vw;
+  cursor: pointer;
+}
+footer p {
+  padding: 0.5rem 1rem;
+}
+
+.cadastro-page {
+  margin: 1rem 10rem;
+  background-color: rgb(255, 255, 255);
+  border: solid rgba(0, 0, 0, 0.084);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans", sans-serif;
+  border-radius: 10px;
+}
+.cadastro-page h2 {
+  padding: 1rem;
+  font-weight: 300;
+}
+.cadastro-page strong {
+  color: #D5ABA5;
+}
+.cadastro-page form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.cadastro-page form input {
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: 0;
+  background-color: #f5f5f5;
+  width: 20vw;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.cadastro-page form div {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+.cadastro-page form button {
+  padding: 0.5rem 2rem;
+  margin: 0.5rem;
+  background-color: #D5ABA5;
+  border: 0;
+  border-radius: 20px;
+  border: solid white;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.saber-mais {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.saber-mais-box {
+  background-color: rgba(214, 214, 214, 0.9137254902);
+  margin: auto;
+  margin-top: 8rem;
+  padding: 1.8rem;
+  border: 1px solid #888;
+  width: 80%;
+  font-family: "Noto Sans", sans-serif;
+}
+.saber-mais-box h2 {
+  text-align: center;
+}
+.saber-mais-box p {
+  margin: auto;
+  font-size: 1.2rem;
+  width: 50vw;
+  text-align: center;
+  font-weight: 300;
+}
+.saber-mais-box img {
+  width: 10vw;
+}
+.saber-mais-box i {
+  padding: 0.6rem;
+  color: black;
+  cursor: pointer;
+}
+.saber-mais-box i:hover {
+  background-color: rgba(136, 136, 136, 0.2666666667);
+  border-radius: 100%;
+  transition: all 0.1s ease;
+}
+
+@media (max-width: 990px) {
+  header .nav-contato a {
+    padding: 0;
+    width: 15vw;
+    font-size: 0.8rem;
+  }
+  header .nav-contato img {
+    width: 3vw;
+  }
+  header .nav-bar {
+    margin: 0.1rem;
+    padding: 1rem;
+  }
+  header .nav-bar ul {
+    padding: 0;
+  }
+  header .nav-bar ul a {
+    padding: 0.5rem;
+  }
+  .saber-mais-box {
+    padding: 0;
+  }
+  .valores-page-feminino {
+    padding: 3rem 0 0 0;
+    margin: 3rem;
+  }
+  .valores-page-masculina {
+    padding: 3rem 0 0 0;
+    margin: 3rem;
+  }
+}
+@media (max-width: 752px) {
+  header .nav-contato {
+    height: auto;
+  }
+  header .nav-contato a {
+    margin: 0 0.5rem 0 0.5rem;
+    font-size: 0.6rem;
+  }
+  header .nav-bar {
+    margin: 0.5rem;
+    padding: 0;
+  }
+  .valores-page-feminino {
+    padding: 0;
+    margin: 5rem 0 0 0;
+  }
+  .valores-page-feminino .valores-item {
+    width: 40vw;
+    margin: 0 0.2rem;
+  }
+  .valores-page-feminino .valores-item p {
+    padding: 0;
+  }
+  .valores-page-feminino .valores-item button {
+    padding: 0.3rem;
+  }
+  .valores-page-masculina {
+    padding: 0;
+    margin: 5rem 0 0 0;
+  }
+  .valores-page-masculina .valores-item {
+    width: 40vw;
+    margin: 0 0.2rem;
+  }
+  .valores-page-masculina .valores-item p {
+    padding: 0;
+  }
+  .valores-page-masculina .valores-item button {
+    padding: 0.3rem;
+  }
+  .sobre-page {
+    padding: 1rem 0;
+  }
+  .sobre-page img {
+    width: 30vw;
+  }
+  .cadastro-page {
+    padding: 1rem 0;
+  }
+}
+@media (max-width: 658px) {
+  header .nav-bar {
+    margin: 0.5rem 0;
+  }
+  .cadastro-page h2 {
+    padding: 0;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 621px) {
+  header .nav-bar {
+    padding: 0;
+    margin: 0.5rem 0;
+  }
+  header .nav-bar li a {
+    font-size: 0.8rem;
+  }
+  .valores-page-feminino {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 2rem 2rem 0;
+  }
+  .valores-page-feminino .valores-item {
+    margin: 1rem 1.5rem 2rem 0;
+  }
+  .valores-page-masculina {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 2rem 2rem 0;
+  }
+  .valores-page-masculina .valores-item {
+    margin: 1rem 1.5rem 2rem 0;
+  }
+  .sobre-page img {
+    width: 30vw;
+  }
+  .cadastro-page {
+    width: 60vw;
+    padding: 0;
+    margin: 1rem auto;
+  }
+  .cadastro-page h2 {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  .cadastro-page #form-item {
+    height: auto;
+    width: 50vw;
+  }
+  .cadastro-page #form-item input {
+    width: 100%;
+  }
+  footer .redes-page img {
+    width: 5vw;
+  }
+}
+@media (max-width: 517px) {
+  header .nav-bar li {
+    padding: 0.3rem;
+  }
+  header .nav-bar li a {
+    padding: 0;
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 486px) {
+  header .nav-bar li {
+    padding: 0 0.3rem;
+  }
+  header .nav-bar li a {
+    font-size: 0.7rem;
+  }
+  .sobre-page img {
+    width: 40vw;
+    height: auto;
+  }
+}
+@media (max-width: 433px) {
+  header {
+    position: static;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: end;
+  }
+  header .nav-contato {
+    width: 45%;
+    padding: 0;
+  }
+  header .nav-contato img {
+    width: 5vw;
+  }
+  header .nav-contato a {
+    width: 100%;
+  }
+  header .nav-bar {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  header .nav-bar ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-contato {
+    padding: 0.5rem;
+  }
+  .nav-intro {
+    height: auto;
+  }
+  .valores-page-feminino {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .valores-page-feminino .valores-item {
+    width: 100%;
+    box-shadow: none;
+    transition: none;
+    padding: 0;
+    margin: 2rem 0 1rem 0;
+  }
+  .valores-page-feminino .valores-item:hover {
+    box-shadow: none;
+  }
+  .valores-page-masculina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .valores-page-masculina .valores-item {
+    width: 100%;
+    box-shadow: none;
+    transition: none;
+    padding: 0;
+    margin: 2rem 0 1rem 0;
+  }
+  .valores-page-masculina .valores-item:hover {
+    box-shadow: none;
+  }
+  .sobre-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sobre-page .info-box-sobre {
+    width: 100%;
+  }
+  .cadastro-page {
+    width: 80%;
+  }
+  .cadastro-page h2 {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
